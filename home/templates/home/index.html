@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static 'home/style.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'home/bootstrap.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'home/font-awesome.min.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'home/main.css' %}">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+    <!-- Fixed   navbar -->
+
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header"><h1 align="center">Find Your Problems</h1>
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+
+	<div id="hello">
+
+        <form method="POST" action="results.html" >
+{%csrf_token%}
+            <div class="container">
+<table class="test">
+    <tr class="">
+  <td><h3>dp</h3><div>
+        <input id="checkbox-1" class="checkbox-custom" name="tag" type="checkbox" value="dp" >
+        <label for="checkbox-1" class="checkbox-custom-label"></label>
+      </div>
+      </td>
+        <td><h3>greedy</h3>
+        <div>
+        <input id="checkbox-2" class="checkbox-custom" name="tag" value="greedy" type="checkbox">
+        <label for="checkbox-2" class="checkbox-custom-label"></label>
+      </div></td>
+        <td><h3>tries</h3>
+        <div>
+        <input id="checkbox-3" class="checkbox-custom" name="tag" value="tries" type="checkbox">
+        <label for="checkbox-3" class="checkbox-custom-label"></label>
+      </div></td>
+        <td><h3>matrices</h3>
+        <div>
+        <input id="checkbox-4" class="checkbox-custom" name="tag" value="matrices" type="checkbox">
+        <label for="checkbox-4" class="checkbox-custom-label"></label>
+      </div></td>
+        <td><h3>graphs</h3>
+        <div>
+        <input id="checkbox-5" class="checkbox-custom" name="tag" value="graphs" type="checkbox">
+        <label for="checkbox-5" class="checkbox-custom-label"></label>
+      </div></td>
+        <td><h3>brute force</h3>
+        <div>
+        <input id="checkbox-6" class="checkbox-custom" name="tag" value="brute force" type="checkbox">
+        <label for="checkbox-6" class="checkbox-custom-label"></label>
+      </div></td>
+        </tr>
+    <tr>
+        <td><h3>dfs and similar</h3>
+        <div>
+        <input id="checkbox-7" class="checkbox-custom" name="tag" value="dfs and similar" type="checkbox">
+        <label for="checkbox-7" class="checkbox-custom-label"></label>
+      </div></td>
+        <td><h3>dsu</h3>
+        <div>
+        <input id="checkbox-8" class="checkbox-custom" name="tag" value="dsu" type="checkbox">
+        <label for="checkbox-8" class="checkbox-custom-label"></label>
+      </div></td>
+        <td><h3>math</h3>
+        <div>
+        <input id="checkbox-9" class="checkbox-custom" name="tag" value="math" type="checkbox">
+        <label for="checkbox-9" class="checkbox-custom-label"></label>
+      </div></td>
+        <td><h3>trees</h3>
+        <div>
+        <input id="checkbox-10" class="checkbox-custom" name="tag" value="trees" type="checkbox">
+        <label for="checkbox-10" class="checkbox-custom-label"></label>
+      </div></td>
+        <td><h3>strings</h3>
+        <div>
+        <input id="checkbox-11" class="checkbox-custom" name="tag" value="strings" type="checkbox">
+        <label for="checkbox-11" class="checkbox-custom-label"></label>
+      </div></td>
+        <td><h3>constructive algorithms</h3>
+        <div>
+        <input id="checkbox-13" class="checkbox-custom" name="tag" value="constructive algorithms" type="checkbox">
+        <label for="checkbox-13" class="checkbox-custom-label"></label>
+      </div></td>
+    </tr>
+    </table>
+            </div>
+
+            <div align="center" class="button">    <input type="submit" value="SEARCH" class="myButton"></div>
+</form>
+
+  </body>
+
+</html>

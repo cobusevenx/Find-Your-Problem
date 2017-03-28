@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static 'home/style.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'home/bootstrap.css' %}">
+
+<link rel="stylesheet" type="text/css" href="{% static 'home/main.css' %}">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<table  align="center">
+{% for i in result %}
+    <tr><td><a href="http://codeforces.com/problemset/problem/{{i.3}}" align="center"  >{{i.0}}&nbsp{{i.1}}&nbsp&nbsp&nbsp&nbsp{{i.2}}</a></td></tr>
+
+{% endfor %}
+    </table>
+ <p align="center">   <a href={{hacker}} align="center">HackerRank-{{value}}</a></p>
+</body>
+</html>
